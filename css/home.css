@@ -44,3 +44,13 @@ p {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
 }
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    mix-blend-mode: multiply;
+}
+

@@ -20,9 +20,9 @@ document
     let bmr;
 
     if (gender === "pria") {
-      bmr = 88.362 + 13.397 * weight + 4.799 * height - 5.677 * age;
+      bmr = 66 + 13.7 * weight + 5 * height - 6.8 * age;
     } else if (gender === "wanita") {
-      bmr = 447.593 + 9.247 * weight + 3.098 * height - 4.33 * age;
+      bmr = 65 + 9.6 * weight + 1.8 * height - 4.7 * age;
     } else {
       alert("Jenis kelamin tidak valid.");
       return;
@@ -32,9 +32,9 @@ document
     const totalCalories = Math.round(bmr * activityLevel);
 
     // Menghitung kebutuhan makronutrien
-    const karbohidrat = Math.round((totalCalories * 0.65) / 4); // 65% dari total kalori, 1g = 4 kalori
+    const karbohidrat = Math.round((totalCalories * 0.65) / 9); // 65% dari total kalori, 1g = 9 kalori
     const protein = Math.round((totalCalories * 0.15) / 4); // 15% dari total kalori, 1g = 4 kalori
-    const lemak = Math.round((totalCalories * 0.2) / 9); // 20% dari total kalori, 1g = 9 kalori
+    const lemak = Math.round((totalCalories * 0.2) / 4); // 20% dari total kalori, 1g = 9 kalori
 
     // Menampilkan hasil
     document.getElementById("result").innerHTML = `
